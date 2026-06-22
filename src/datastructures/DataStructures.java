@@ -37,13 +37,41 @@ public class DataStructures {
 //        System.out.println("Popped: " + popped);
 //        stack.print();
 
-MyQueue queue = new MyQueue();
+//MyQueue queue = new MyQueue();
+//
+//queue.enqueue(1);
+//queue.enqueue(2);
+//queue.enqueue(3);
+//queue.dequeue();
+//queue.print();
 
-queue.enqueue(1);
-queue.enqueue(2);
-queue.enqueue(3);
-queue.dequeue();
-queue.print();
+//        int[] numbers = {2, 4, 6, 8, 10, 12, 14, 16, 18, 20};
+//        int result = BinarySearch.search(numbers, 14);
+//        System.out.println("Found at index: " + result);
+//        System.out.println(BinarySearch.search(numbers, 20));
+//        System.out.println(BinarySearch.search(numbers, 2));
+//        System.out.println(BinarySearch.search(numbers, 7));
+
+//int[] numbers = {5, 2};
+//
+//int temp = numbers[0];
+//numbers[0] = numbers[1];
+//numbers[1] = temp;
+//
+//        System.out.println(numbers[0] + ", " + numbers[1]);
+
+//int numbers[] = {5, 2, 8, 1, 9};
+//BubbleSort.sort(numbers);
+//
+//for (int i = 0; i < numbers.length; i++){
+//    System.out.print(numbers[i] + " ");
+//}
+
+int unsorted[] = {9, 2, 5, 1, 8};
+
+BubbleSort.sort(unsorted);
+
+int result = BinarySearch.search(unsorted, 8);
+        System.out.println("Found 8 index at: " + result);
     }
-    
 }
